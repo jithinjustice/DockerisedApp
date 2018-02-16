@@ -1,0 +1,23 @@
+{
+  "name": "alm_questionnaire",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "ls",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "async": "^1.5.0",
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "http": "0.0.0",
+    "mongoose": "^4.3.0",
+    "request": "^2.67.0",
+    "mongodb": "~3.0.1",
+    "monk": "~6.0.5"
+  }
+}

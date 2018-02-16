@@ -1,0 +1,3 @@
+1. Need to fix the Date as it is taking the current system date for every project 
+
+2. Add the mongoDB schema validations in mongoose schema

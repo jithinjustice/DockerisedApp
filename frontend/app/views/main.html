@@ -1,0 +1,63 @@
+<html>
+<body>	<h1>List of Projects</h1>
+            
+            <table class="table" border="1">  <!--class is used to access the class of bootstrap -->
+                <thead>
+                    <tr>
+                        <th>project Id</th>
+                        <th>Project Name</th>
+						<th>Tl Name</th>
+						<th>Project Manager</th>	
+						<th>Architech Name</th>	
+						<th>DmName</th>	
+						<th>client Name</th>	
+						<th>languages</th>				
+						<th>View</th>						
+						<th>Edit</th>
+						<th>Remove</th>
+					</tr>
+					<tr ng-repeat="rows in listOfProjects">
+						<td ng-repeat-start="item in rows">{{item.misId}}</td>
+						<td>{{item.projectName}}</td>
+						<td>{{item.tLName}}</td>
+						<td>{{item.pmName}}</td>
+						<td>{{item.architechName}}</td>
+						<td>{{item.dmName}}</td>
+						<td>{{item.clientName}}</td>
+						<td ng-repeat-end>{{item.languages}}</td>
+					<!--	<td>{{prjct.framework_version}}</td>
+						<td>{{prjct.frontendTechnology}}</td>
+						<td>{{prjct.applicationArchitecture}}</td>
+						<td>{{prjct.dbName}}</td>
+						<td>{{prjct.executionMethodology}}</td>
+						<td>{{prjct.projectmgmtTool}}</td>
+						<td>{{prjct.requirenmentmgmtTool}}</td>
+						<td>{{prjct.ideUsed}}</td>
+						<td>{{prjct.idePlugin}}</td>
+						<td>{{prjct.codeReviewTool}}</td>
+						<td>{{prjct.sourceCodemgmtTool}}</td>
+						<td>{{prjct.buildTool}}</td>
+						<td>{{prjct.packagingType}}</td>
+						<td>{{prjct.repostroge}}</td>
+						<td>{{prjct.ciServer}}</td>
+						<td>{{prjct.buildTriggerType}}</td>
+						<td>{{prjct.unitTestTool}}</td>
+						<td>{{prjct.mochFramework}}</td>
+						<td>{{prjct.codeCoverage}}</td>
+						<td>{{prjct.percentCodeCoverage}}</td>
+						<td>{{prjct.uiTesting}}</td>
+						<td>{{prjct.deploymentType}}</td>
+						<td>{{prjct.deploymentTool}}</td>
+						<td>{{prjct.applicationServer}}</td>
+						<td>{{prjct.releaseMgmt}}</td>
+						<td>{{prjct.tracebility}}</td> -->
+					
+						
+						 <td> <input type="button" ng-click="view(prjct._id)" value="ViewProject" class="btn btn-link"/> </button></td>
+                        <td> <input type="button" ng-click="edit(prjct._id)" value="EDIT" class="btn btn-link"/> </button></td>
+						 <td> <input type="button" ng-click="remove(prjct._id)" value="REMOVE" class="btn btn-link" /> </button></td>
+                        
+                    </tr>
+                </tbody>
+            </table> </body>
+</html>
